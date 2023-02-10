@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>text change from input field</h1>
+    <p id="change-paragraph">we want to change this text</p>
+    <input id="input-field" type="text">
+    <button id="submit">submit</button>
+    <script>
+        document.getElementById('submit').addEventListener('click',function(){
+               const inputField = document.getElementById('input-field');
+               const inputText = inputField.value;
+               const inserttext = document.getElementById('change-paragraph');
+               inserttext.innerText = inputText;
+
+               inputField.value = '';
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="remove-text">github like delete confirmation button</h2>
+    <input id="input-field" type="text">
+    <br>
+    <button id="sub" disabled>submit</button>
+    <script>
+        document.getElementById('input-field').addEventListener('keyup',function(event){
+            const text = event.target.value;
+            const submit = document.getElementById('sub');
+            if(text == 'delete'){
+                submit.removeAttribute('disabled');
+            }
+            else{
+                submit.setAttribute('disabled',true);
+            }
+        })
+        document.getElementById('sub').addEventListener('click',function(){
+            const  removeText = document.getElementById('remove-text');
+            removeText.style.display = 'none';
+        })
+    </script>
+</body>
+</html>

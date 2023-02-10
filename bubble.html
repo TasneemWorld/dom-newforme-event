@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="main-container">
+        <h1 id="heading">Dom topic bubble:</h1>
+        <ul id="list-container">
+            <li id="item-1">Lorem ipsum dolor sit.</li>
+            <li id="item-2">Animi expedita deleniti veritatis.</li>
+            <li id="item-3">Nulla voluptas doloremque suscipit.</li>
+            <li id="item-4">Quis quibusdam nulla atque.</li>
+            <li id="item-5">Numquam enim veniam adipisci!</li>
+            <li id="item-6">Sed harum magni provident?</li>
+        </ul>
+    </section>
+
+
+    <script>
+        document.getElementById('item-2').addEventListener('click',function(){
+            console.log('click item-2');
+        })
+        document.getElementById('list-container').addEventListener('click',function(){
+            console.log('click list-container');
+        })
+        document.getElementById('heading').addEventListener('click',function(){
+            console.log('click heading');
+        })
+        document.getElementById('main-container').addEventListener('click',function(){
+            console.log('click main-container');
+        })
+    </script>
+</body>
+</html>

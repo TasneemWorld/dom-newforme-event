@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>text change event</h1>
+    <h2 id="heading-change">we change this heading tag</h2>
+    <button id="change">text change</button>
+    <script>
+        document.getElementById('change').addEventListener('click',function(){
+            const headingChange = document.getElementById('heading-change');
+            console.log(headingChange)
+            headingChange.innerText = 'this is tasneem'
+        })
+    </script>
+</body>
+</html>
